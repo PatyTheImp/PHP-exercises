@@ -1,0 +1,48 @@
+body {
+    background-color: #121112;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1 {
+    color: #AB0039;    
+    font-size: 75px;
+    text-shadow: 5px 5px #4C0026;
+    animation:  hover 1s ease-in-out infinite;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: pink;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tuna {
+    animation: walk-cycle 10s linear infinite;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+  }
+
+@keyframes hover {
+    0% {
+       transform: translatey(-10px) perspective(200px)
+          translatez(0);
+    }
+    50% {
+       transform: translatey(-10px) perspective(200px)
+          translatez(50px);
+    }
+    100% {
+       transform: translatey(-10px) perspective(200px)
+          translatez(0);
+    }
+   
+}
+
+@keyframes walk-cycle {
+    0% {left: -38px;}
+    100% {left: 100%;}
+ }
